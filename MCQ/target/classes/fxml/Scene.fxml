@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="386.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ridoy.mcq.FXMLController">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="95.0" layoutX="153.0" layoutY="35.0">
+         <image>
+            <Image url="@img/nsulogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="432.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="158.0" opacity="0.86" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #000;">
+         <children>
+            <TextField fx:id="uField" alignment="CENTER" layoutX="102.0" layoutY="74.0" prefHeight="33.0" prefWidth="197.0" promptText="username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pField" alignment="CENTER" layoutX="102.0" layoutY="126.0" prefHeight="33.0" prefWidth="197.0" promptText="password">
+               <font>
+                  <Font size="15.0" />
+               </font></PasswordField>
+            <Button  styleClass="btn" fx:id="log" layoutX="102.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="95.0" style="" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button  styleClass="btn" fx:id="clr" layoutX="204.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="25.0" prefWidth="95.0" style="" text="Clear" textFill="WHITE">               
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="120.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Panel" textAlignment="CENTER" wrappingWidth="160.55859375">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="label" layoutX="103.0" layoutY="237.0" prefHeight="17.0" prefWidth="197.0" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

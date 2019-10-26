@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="253.0" prefWidth="413.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ridoy.mcq.ResultMessageController">
+   <children>
+      <Label fx:id="resultLabel" layoutX="88.0" layoutY="64.0" prefHeight="17.0" prefWidth="0.0" textAlignment="CENTER" textFill="#f50000">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Label>
+      <Button layoutX="88.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleMainMenu" style="-: ;" text="Main Menu" />
+   </children>
+</AnchorPane>

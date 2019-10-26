@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="949.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ridoy.mcq.TestController">
+   <children>
+      <Text fill="WHITE" layoutX="379.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Multiple Choice Question" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Pane prefHeight="41.0" prefWidth="949.0" style="-fx-background-color: #7719AA;">
+         <children>
+            <Text fill="WHITE" layoutX="413.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" textAlignment="CENTER" wrappingWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Button layoutX="8.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMainMenu" prefHeight="0.0" prefWidth="89.0" style="-fx-background-color: #31005f;" text="Main Menu" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="846.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="0.0" prefWidth="89.0" style="-fx-background-color: #31005f;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="512.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="21.0" prefWidth="41.0" style="-fx-background-color: red;" text="Start" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="357.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="( Total 5 Questions. Each Ques has 5 points )" />
+      <Text fill="RED" layoutX="388.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click start button">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Group>
+         <children>
+            <Label fx:id="ques1" layoutX="109.0" layoutY="205.0" text="_______________" textFill="WHITE" />
+            <Label layoutX="73.0" layoutY="205.0" text="Q1 :" textFill="WHITE" />
+            <RadioButton fx:id="qn14" layoutX="728.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="#fcfcfc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="q1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="qn13" layoutX="541.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q1" />
+            <RadioButton fx:id="qn12" layoutX="727.0" layoutY="205.0" mnemonicParsing="false" text="______" textFill="WHITE" toggleGroup="$q1" />
+            <RadioButton fx:id="qn11" layoutX="541.0" layoutY="206.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q1" />
+         </children>
+      </Group>
+      <Group layoutY="74.0">
+         <children>
+            <Label fx:id="ques2" layoutX="109.0" layoutY="205.0" text="_______________" textFill="WHITE" />
+            <Label layoutX="73.0" layoutY="205.0" text="Q2 :" textFill="WHITE" />
+            <RadioButton fx:id="qn24" layoutX="728.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="#fcfcfc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="q2" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="qn23" layoutX="541.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q2" />
+            <RadioButton fx:id="qn22" layoutX="727.0" layoutY="205.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q2" />
+            <RadioButton fx:id="qn21" layoutX="541.0" layoutY="206.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q2" />
+         </children>
+      </Group>
+      <Group layoutY="149.0">
+         <children>
+            <Label fx:id="ques3" layoutX="109.0" layoutY="205.0" text="_______________" textFill="WHITE" />
+            <Label layoutX="73.0" layoutY="205.0" text="Q3 :" textFill="WHITE" />
+            <RadioButton fx:id="qn34" layoutX="728.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="#fcfcfc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="q3" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="qn33" layoutX="541.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q3" />
+            <RadioButton fx:id="qn32" layoutX="727.0" layoutY="205.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q3" />
+            <RadioButton fx:id="qn31" layoutX="541.0" layoutY="206.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q3" />
+         </children>
+      </Group>
+      <Group layoutY="220.0">
+         <children>
+            <Label fx:id="ques4" layoutX="109.0" layoutY="205.0" text="_______________" textFill="WHITE" />
+            <Label layoutX="73.0" layoutY="205.0" text="Q4 :" textFill="WHITE" />
+            <RadioButton fx:id="qn44" layoutX="728.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="#fcfcfc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="q4" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="qn43" layoutX="541.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q4" />
+            <RadioButton fx:id="qn42" layoutX="727.0" layoutY="205.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q4" />
+            <RadioButton fx:id="qn41" layoutX="541.0" layoutY="206.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q4" />
+         </children>
+      </Group>
+      <Group layoutY="290.0">
+         <children>
+            <Label fx:id="ques5" layoutX="109.0" layoutY="205.0" text="_______________" textFill="WHITE" />
+            <Label layoutX="73.0" layoutY="205.0" text="Q5 :" textFill="WHITE" />
+            <RadioButton fx:id="qn54" layoutX="728.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="#fcfcfc">
+               <toggleGroup>
+                  <ToggleGroup fx:id="q5" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="qn53" layoutX="541.0" layoutY="232.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q5" />
+            <RadioButton fx:id="qn52" layoutX="727.0" layoutY="205.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q5" />
+            <RadioButton fx:id="qn51" layoutX="541.0" layoutY="206.0" mnemonicParsing="false" text="_____" textFill="WHITE" toggleGroup="$q5" />
+         </children>
+      </Group>
+      <Button layoutX="413.0" layoutY="599.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="29.0" prefWidth="124.0" style="-fx-background-color: green;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,38 @@
+.btn {
+    -fx-font-weight: bold;
+    -fx-border-radius: 22;
+    -fx-background-radius: 22;
+    -fx-font-size:16px;
+    -fx-border-width: 3;
+}
+#clr{
+    -fx-border-color: red;
+    -fx-background-color: red;
+}
+#clr:hover{
+    -fx-background-color: none;
+}
+#log{
+    -fx-border-color: green;
+    -fx-background-color: green;
+}
+#log:hover{
+    -fx-background-color: none;
+}
+.btn:hover{
+    -fx-font-weight: bold;
+    -fx-background-radius: 22;
+    -fx-font-size:16px;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+    -fx-border-color: red;
+    -fx-background-color: none;
+}
+.btn:pressed{
+    -fx-font-weight: bold;
+    -fx-background-radius: 22;
+    -fx-font-size:16px;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+    -fx-rotate: 10;
+}

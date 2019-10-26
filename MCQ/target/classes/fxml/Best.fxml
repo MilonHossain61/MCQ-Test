@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="949.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ridoy.mcq.BestController">
+   <children>
+      <Text fill="WHITE" layoutX="96.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project Name: MCQ Test" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Pane prefHeight="41.0" prefWidth="949.0" style="-fx-background-color: #7719AA;">
+         <children>
+            <Text fill="WHITE" layoutX="413.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" textAlignment="CENTER" wrappingWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Button layoutX="8.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleMainMenu" prefHeight="0.0" prefWidth="89.0" style="-fx-background-color: #31005f;" text="Main Menu" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="846.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="0.0" prefWidth="89.0" style="-fx-background-color: #31005f;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="96.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Instructor: B M Mainul Hossain">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="96.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lab Instructor: Tahsin Imtiaz Abir">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="96.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Members:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="214.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sadman Hossain Ridoy">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="214.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faisal Alvi">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="214.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanjila Rahman Tania">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
